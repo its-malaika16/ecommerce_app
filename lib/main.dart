@@ -1,3 +1,7 @@
+import 'package:ecommerce_store/screens/auth-ui/splash-screen.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+
+import 'screens/user-panel/main-screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,8 +14,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-
+    return GetMaterialApp(
+home: const SplashScreen(),
     );
   }
 }
