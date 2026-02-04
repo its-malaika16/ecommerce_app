@@ -1,3 +1,5 @@
+import 'package:ecommerce_store/screens/auth-ui/sign-in-screen.dart';
+import 'package:ecommerce_store/screens/auth-ui/sign-up-screen.dart';
 import 'package:ecommerce_store/screens/auth-ui/splash-screen.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
@@ -14,8 +16,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-home: const SplashScreen(),
-    );
+    return GetMaterialApp(home: const SignUpScreen());
   }
 }
