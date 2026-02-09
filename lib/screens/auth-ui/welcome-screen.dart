@@ -1,3 +1,4 @@
+import 'package:ecommerce_store/screens/auth-ui/sign-in-screen.dart';
 import 'package:ecommerce_store/utils/app-constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -68,12 +69,13 @@ class WelcomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: TextButton.icon(
-                  onPressed: (){},
+                  onPressed: (){
+                    Get.to(()=> SignInScreen());
+                  },
                   label: Text("Sign in with email",style: TextStyle(color: AppConstant.appTextColor),),
                   icon: Icon(Icons.email,
                     color: AppConstant.appTextColor,
                     ),
-
                 ),
               ),
             ),
