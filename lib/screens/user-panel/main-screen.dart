@@ -3,10 +3,13 @@ import 'package:ecommerce_store/utils/app-constant.dart';
 import 'package:ecommerce_store/widgets/banner-widget.dart';
 import 'package:ecommerce_store/widgets/category-widget.dart';
 import 'package:ecommerce_store/widgets/custom-drawer-widget.dart';
+import 'package:ecommerce_store/widgets/flash-sale-widget.dart';
 import 'package:ecommerce_store/widgets/heading-widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+
+import 'all-categories-screen.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -41,7 +44,7 @@ class MainScreen extends StatelessWidget {
               HeadingWidget(
                 headingTitle: 'Categories',
                 headingSubTitle: 'According to your budget',
-                onTap: () {},
+                onTap: () => Get.to(()=>AllCategoriesScreen()),
                 buttonText: 'See More >',
               ),
 
@@ -54,7 +57,7 @@ class MainScreen extends StatelessWidget {
                 buttonText: 'See More >',
               ),
 
-
+              FlashSaleWidget(),
             ],
           ),
         ),
