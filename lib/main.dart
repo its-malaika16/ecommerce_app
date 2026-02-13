@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: const SignUpScreen(),
+      home: const SplashScreen(),
       builder: EasyLoading.init(),
     );
   }
